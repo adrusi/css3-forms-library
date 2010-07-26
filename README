@@ -1,0 +1,54 @@
+The css3 forms library styles textboxes, textareas, buttons, radios, textboxes, and partially select dropdowns.
+support:
+webkit: full support
+mozilla: requires javascript for radios and checkboxes and does not support select dropdowns
+trident (ie): negligible styling, still functional
+
+default themes: 
+•Grey
+•Blue
+•Green
+•Red
+
+HOWTO:
+1) link to the stylesheet you want to use (grey.css, blue.css, green.css, or red.css)
+2) link to the javascript fallback for mozilla (main.js)
+2) wrap each form element and its corresponding label in a <p> tag
+   if you dont want a label, give the paragraph the class "nolabel" (no quotes)
+3) fieldset/legend elements are supported!
+
+Example:
+<form action="signup.php" method="post">
+	<fieldset>
+		<legend>Signup</legend>
+		<p>
+			<label for="name">Your Name:</label>
+			<input type="text" name="name" id="name" />
+		</p>
+		<p>
+			<label for="email">Your Email:</label>
+			<input type="text" name="email" id="email" />
+		</p>
+		<p>
+			<label for="username">Desired Username:</label>
+			<input type="text" name="username" id="username" />
+		</p>
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" />
+		</p>
+		<p>
+			<label for="passwordc">Password Confirmation:</label>
+			<input type="password" name="passwordc" id="passwordc" />
+		</p>
+		<p>
+			<label for="tos">Agree to the Terms of Service</label>
+			<input type="checkbox" name="tos" value="agree" id="tos" />
+		</p>
+		<p class="nolabel">
+			<input type="submit" value="Sign Up!" />
+		</p>
+	</fieldset>
+</form>
+
+a screenshot of the resulting form can be found at: http://www.flickr.com/photos/43186605@N05/4829198773/

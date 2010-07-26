@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>red</title>
+		<link href="http://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" rel="stylesheet" />
+		<link rel="stylesheet" href="red.css" />
+	</head>
+	<body>
+		<nav>
+			<strong>Other Styles: </strong>
+			<a href="index.html">Gray</a> |
+			<a href="blue.html">Blue</a> |
+			<a href="green.html">Green</a> |
+			<a href="red.html">Red</a>
+		</nav>
+		<h1>CSS3 Forms</h1>
+		<p><strong>Notice:</strong> select (dropdown) elements are best viewed in a webkit browser</p>
+		<p><strong>Notice:</strong> checkboxes and radios require javascript to display correctly in mozilla browsers (still functional)</p>
+		<p><strong>Notice:</strong> IE is not supported in the least</p>
+		<form>
+			<p>
+				<label for="firsttext">Type Here:</label>
+				<input type="text" id="firsttext"/>
+			</p>
+			<fieldset>
+				<legend>What is your sex?</legend>
+				<p>
+					<input type="radio" name="sex" value="male" id="male" />
+					<label for="male">Male</label>
+				</p>
+				<p>
+					<input type="radio" name="sex" value="male" id="female" />
+					<label for="female">Female</label>
+				</p>
+			</fieldset>
+			<p>
+				<label for="check">Check This:</label>
+				<input type="checkbox" id="check" />
+			</p>
+			<p>
+				<label for="secondtext">Name Here and Message Below:</label>
+				<input type="text" id="secondtext"/>
+			</p>
+			<p class="nolabel">
+				<textarea></textarea>
+			</p>
+			<p>
+				<label for="dropdown">Dropdown:</label>
+				<select>
+					<option>Option #1</option>
+					<option>Option #2</option>
+					<option>Option #3</option>
+				</select>
+			</p>
+			<p class="nolabel">
+				<button>button</button>
+			</p>
+		</form>
+		<script src="modernizr-1.5.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>

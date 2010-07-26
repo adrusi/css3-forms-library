@@ -1,0 +1,192 @@
+form {
+	font-family: "Tahoma", "Geneva", sans-serif;
+	color: #629262;
+	padding: 10px;
+	width: 600px;
+}
+fieldset {
+	border: 1px solid #629262;
+	padding: 0;
+	padding-left: -1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+legend {
+	font-size: 1.5em;
+	color: #629262;
+	font-weight: bold;
+	margin-left: 110px;
+	padding: 5px 10px;
+	border: 1px solid #629262;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	text-transform: capitalize;
+}
+form p {
+	padding: 5px 0;
+	position: relative;
+}
+form p:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+form p.nolabel * {
+	margin-left: 110px;
+}
+label {
+	width: 100px;
+	text-align: right;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	text-transform: capitalize;
+	line-height: 33px;
+}
+input[type=text], textarea, input[type=password] {
+	border: 1px solid #629262;
+	color: #629262;
+	padding: 10px;
+	vertical-align: text-top;
+	width: 300px;
+	-webkit-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	-moz-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left 25, from(#f8fff8), color-stop(4%, #e8eee8), to(#f8fff8));  
+	background: -moz-linear-gradient(top, #f8fff8, #e8eee8 1px, #f8fff8 25px); 
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+}
+p.nolabel input[type=text], p.nolabel textarea, p.nolabel input[type=password] {
+	position: relative;
+	left: 0;
+}
+textarea {
+	min-height: 100px;
+	max-width: 300px;
+	min-width: 300px;
+	resize: both;
+}
+button, input[type=submit] {
+	border: 1px solid #629262;
+	color: #205020;
+	-webkit-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	-moz-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left 25, from(#f8fff8), color-stop(4%, #e8eee8), to(#f8fff8));  
+	background: -moz-linear-gradient(top, #f8fff8, #e8eee8 1px, #f8fff8 25px); 
+	padding: 10px;
+}
+input[type=text]:hover, input[type=password]:hover, textarea:hover, input[type=submit]:hover, button:hover, input[type=radio]:hover:before, input[type=checkbox]:hover:before, select:hover {
+	-webkit-box-shadow: #629262 0 1px 3px;
+	box-shadow: #629262 0 1px 3px;
+	-moz-box-shadow: #629262 0 1px 3px;
+	color: #629262;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=submit]:focus, button:focus, input[type=radio]:focus:before, input[type=checkbox]:focus:before, select:focus {
+	outline: 0;
+	-webkit-box-shadow: #363 0 0 3px;
+	box-shadow: #363 0 0 3px;
+	-moz-box-shadow: #363 0 0 3px;
+}
+input[type=submit]:active button:active {
+	position: relative;
+	top: 1px;
+}
+input[type=radio]:before, .radioreplacement {
+	position: relative;
+	top: -2px;
+	left: -2px;
+	display: block;
+	height: 14px;
+	width: 14px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	content: " ";
+	text-align: center;
+	position: relative;
+	z-index: 9999;
+	border: 1px solid #629262;
+	color: #205020;
+	-webkit-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	background: -webkit-gradient(linear, left top, left 25, from(#f8fff8), color-stop(4%, #e8eee8), to(#f8fff8));  
+	background: -moz-linear-gradient(top, #f8fff8, #e8eee8 1px, #f8fff8 25px); 
+}
+input[type=radio]:checked:before {
+	content: "•";
+}
+input[type=checkbox]:before, .checkboxreplacement {
+	position: relative;
+	top: -2px;
+	left: -2px;
+	display: block;
+	height: 14px;
+	width: 14px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	content: " ";
+	text-align: center;
+	position: relative;
+	z-index: 9999;
+	border: 1px solid #629262;
+	color: #205020;
+	-webkit-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	background: -webkit-gradient(linear, left top, left 25, from(#f8fff8), color-stop(4%, #e8eee8), to(#f8fff8));  
+	background: -moz-linear-gradient(top, #f8fff8, #e8eee8 1px, #f8fff8 25px); 
+}
+input[type=checkbox]:checked:before {
+	content: "✓";
+}
+.radioreplacement, .checkboxreplacement {
+	position: absolute;
+	top: 15px;
+	left: 110px;
+	vertical-align: top;
+}
+.checkboxreplacement {
+	text-indent: -9999px;
+}
+.checkboxreplacement.checked {
+	text-indent: 0!important;
+}
+input[type=checkbox], input[type=radio] {
+	position: relative;
+	top: 6px;
+}
+select {
+	border: 1px solid #629262;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	color: #205020;
+	-webkit-box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	box-shadow: #d3e3d3 0.1em 0.1em 0.2em;
+	background: -webkit-gradient(linear, left top, left 25, from(#f8fff8), color-stop(4%, #e8eee8), to(#f8fff8));  
+	background: -moz-linear-gradient(top, #f8fff8, #e8eee8 1px, #f8fff8 25px); 
+	position: relative;
+	top: 6px;
+	height: 20px;
+}
