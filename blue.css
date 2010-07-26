@@ -94,16 +94,33 @@ button, input[type=submit] {
 	padding: 10px;
 }
 input[type=text]:hover, input[type=password]:hover, textarea:hover, input[type=submit]:hover, button:hover, input[type=radio]:hover:before, input[type=checkbox]:hover:before, select:hover {
-	-webkit-box-shadow: #626292 0 1px 3px;
-	box-shadow: #626292 0 1px 3px;
-	-moz-box-shadow: #626292 0 1px 3px;
+	-webkit-box-shadow: #336 0 0 3px;
+	box-shadow: #336 0 0 3px;
+	-moz-box-shadow: #336 0 0 3px;
 	color: #626292;
 }
-input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=submit]:focus, button:focus, input[type=radio]:focus:before, input[type=checkbox]:focus:before, select:focus {
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: #336 0 0 3px;
+		box-shadow: #336 0 0 3px;
+		-moz-box-shadow: #336 0 0 3px;
+	}
+	100% {
+		-webkit-box-shadow: #336 0 0 10px;
+		box-shadow: #336 0 0 10px;
+		-moz-box-shadow: #336 0 0 10px;
+	}
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=submit]:focus, button:focus, input[type=radio]:focus:before, .radioreplacement:focus, input[type=checkbox]:focus:before, .checkboxreplacement:focus, select:focus {
 	outline: 0;
 	-webkit-box-shadow: #336 0 0 3px;
 	box-shadow: #336 0 0 3px;
 	-moz-box-shadow: #336 0 0 3px;
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 9999;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
 }
 input[type=submit]:active button:active {
 	position: relative;
