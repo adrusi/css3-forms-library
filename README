@@ -1,4 +1,5 @@
 The css3 forms library styles textboxes, textareas, buttons, radios, textboxes, and partially select dropdowns.
+demo page: http://adrusi.com/css3-forms/
 support:
 webkit: full support
 mozilla: requires javascript for radios and checkboxes and does not support select dropdowns
